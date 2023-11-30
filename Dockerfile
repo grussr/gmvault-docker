@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.11
 
 ENV GMVAULT_DIR /data
 ENV GMVAULT_EMAIL_ADDR test@example.com
@@ -8,7 +8,7 @@ RUN apk add --update \
 	bash \
         ca-certificates \
         tzdata \
-        python2 \
+        python \
         py-pip \
         shadow@testing \
     && pip install --upgrade pip \
