@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.15
 
 ENV GMVAULT_DIR /data
 ENV GMVAULT_EMAIL_ADDR test@example.com
