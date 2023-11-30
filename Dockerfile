@@ -8,7 +8,7 @@ RUN apk add --update \
 	bash \
         ca-certificates \
         tzdata \
-        python \
+        python2 \
         py-pip \
         shadow@testing \
     && pip install --upgrade pip \
