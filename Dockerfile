@@ -15,8 +15,8 @@ RUN apk add --update \
     && addgroup abc \
     && adduser -s /bin/bash -G abc -H -D abc
 
-COPY gmvault-source /gmvault
-RUN python /gmvault/setup.py install
+COPY gmvault-source /gmvault-source
+RUN python /gmvault-source/setup.py install
     
 VOLUME /data
 RUN mkdir /app
