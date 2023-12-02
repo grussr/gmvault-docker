@@ -11,11 +11,12 @@ RUN apk add --update \
         py-pip \
         shadow \
     && pip install --upgrade pip \
-    && pip install gmvault \
     && rm -rf /var/cache/apk/* \
     && addgroup abc \
     && adduser -s /bin/bash -G abc -H -D abc
 
+COPY gmvault-source /gmvault
+RUN python /gmvualt/setup.py install
     
 VOLUME /data
 RUN mkdir /app
